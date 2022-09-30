@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import { from } from 'rxjs';
+import { AfterViewInit, Component } from '@angular/core';
+import { from, fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit{
   title = 'Rxjs';
   postArray=[  //this is the array that i am going to convert into obervable
   //through from operator 
@@ -31,5 +31,16 @@ export class AppComponent {
         
       }
     )
+
+
+  }
+  ngAfterViewInit(): void{
+   fromEvent(document.getElementById('click-button')!,'click').subscribe({
+
+    next:(data)=>console.log(data),
+    error:(error)=>console.log(error),
+    complete:()=>console.log("action perform well")
+    
+   })
   }
 }
