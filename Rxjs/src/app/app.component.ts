@@ -1,5 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { from, fromEvent } from 'rxjs';
+import { fuctionObs, functionOb } from './services/function';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,20 @@ export class AppComponent implements AfterViewInit{
   //from operator convert postArray into the observable that i will call into
   // construtor through subscribe method
   constructor(){
+
+     console.log('Before function call')
+     console.log(fuctionObs())
+     console.log(fuctionObs())
+     console.log('after function call')
+
+     console.log('Before obseervable call')
+     functionOb.subscribe(data=>{
+      console.log(data)
+     })
+     functionOb.subscribe(data=>{
+      console.log(data)
+     })
+     console.log('after after observable call')
 
     this.postArrayAsObervable$.subscribe( //into the construtor i am subscribing my observale through subscribe method that take  an object having a three method next error and complete if the program run successfully then next method will be run  and the message will be show Action has performed successfully and if there is any error then error method will be exectued  
 
