@@ -7,6 +7,11 @@ import { NewCustomObservableComponent } from './component/new-custom-observable/
 import { FunctionObservableComponent } from './component/function-observable/function-observable.component';
 import { UnsubscribeObservableComponent } from './component/unsubscribe-observable/unsubscribe-observable.component';
 import { OperatorBasicComponent } from './component/operator-basic/operator-basic.component';
+import { OperatorComponent } from './operator/operator.component';
+import { BufferOperatorComponent } from './operator/buffer-operator/buffer-operator.component';
+import { BufferCountComponent } from './operator/buffer-count/buffer-count.component';
+import { TakeOperatorComponent } from './operator/take-operator/take-operator.component';
+import { DistinctOperatorComponent } from './operator/distinct-operator/distinct-operator.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +19,12 @@ import { OperatorBasicComponent } from './component/operator-basic/operator-basi
     NewCustomObservableComponent,
     FunctionObservableComponent,
     UnsubscribeObservableComponent,
-    OperatorBasicComponent
+    OperatorBasicComponent,
+    OperatorComponent,
+    BufferOperatorComponent,
+    BufferCountComponent,
+    TakeOperatorComponent,
+    DistinctOperatorComponent
   ],
   imports: [
     BrowserModule,
