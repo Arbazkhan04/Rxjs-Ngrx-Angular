@@ -12,6 +12,8 @@ import { BufferOperatorComponent } from './operator/buffer-operator/buffer-opera
 import { BufferCountComponent } from './operator/buffer-count/buffer-count.component';
 import { TakeOperatorComponent } from './operator/take-operator/take-operator.component';
 import { DistinctOperatorComponent } from './operator/distinct-operator/distinct-operator.component';
+import { DistinctUntillChanillChangedComponent } from './operator/distinct-untill-chanill-changed/distinct-untill-chanill-changed.component';
+import { AuditComponent } from './operator/audit/audit.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { DistinctOperatorComponent } from './operator/distinct-operator/distinct
     BufferOperatorComponent,
     BufferCountComponent,
     TakeOperatorComponent,
-    DistinctOperatorComponent
+    DistinctOperatorComponent,
+    DistinctUntillChanillChangedComponent,
+    AuditComponent
   ],
   imports: [
     BrowserModule,
