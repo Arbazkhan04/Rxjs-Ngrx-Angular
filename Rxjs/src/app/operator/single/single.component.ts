@@ -26,7 +26,7 @@ export class SingleComponent implements OnInit {
       {name:'sabir',id:2},
       {name:'kabir',id:2},
     )
-    source$.pipe(single(x=>x.name.startsWith('k'))).subscribe(
+    source2$.pipe(single(x=>x.name.startsWith('k'))).subscribe(
       (data)=>{console.log('single operator data '+data)},
       (error)=>{console.error(error)}
       
