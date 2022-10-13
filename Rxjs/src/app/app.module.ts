@@ -16,6 +16,8 @@ import { DistinctUntillChanillChangedComponent } from './operator/distinct-until
 import { AuditComponent } from './operator/audit/audit.component';
 import { FirstComponent } from './operator/first/first.component';
 import { DebounceComponent } from './operator/debounce/debounce.component';
+import { ElementAtComponent } from './operator/element-at/element-at.component';
+import { SingleComponent } from './operator/single/single.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { DebounceComponent } from './operator/debounce/debounce.component';
     DistinctUntillChanillChangedComponent,
     AuditComponent,
     FirstComponent,
-    DebounceComponent
+    DebounceComponent,
+    ElementAtComponent,
+    SingleComponent
   ],
   imports: [
     BrowserModule,
