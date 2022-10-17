@@ -18,6 +18,7 @@ import { FirstComponent } from './operator/first/first.component';
 import { DebounceComponent } from './operator/debounce/debounce.component';
 import { ElementAtComponent } from './operator/element-at/element-at.component';
 import { SingleComponent } from './operator/single/single.component';
+import { AjaxComponent } from './operator/ajax/ajax.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { SingleComponent } from './operator/single/single.component';
     FirstComponent,
     DebounceComponent,
     ElementAtComponent,
-    SingleComponent
+    SingleComponent,
+    AjaxComponent
   ],
   imports: [
     BrowserModule,
