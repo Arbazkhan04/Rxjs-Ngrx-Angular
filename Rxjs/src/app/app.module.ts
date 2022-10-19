@@ -19,6 +19,7 @@ import { DebounceComponent } from './operator/debounce/debounce.component';
 import { ElementAtComponent } from './operator/element-at/element-at.component';
 import { SingleComponent } from './operator/single/single.component';
 import { AjaxComponent } from './operator/ajax/ajax.component';
+import { HigherOrderOperatorComponent } from './operator/higher-order-operator/higher-order-operator.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { AjaxComponent } from './operator/ajax/ajax.component';
     DebounceComponent,
     ElementAtComponent,
     SingleComponent,
-    AjaxComponent
+    AjaxComponent,
+    HigherOrderOperatorComponent
   ],
   imports: [
     BrowserModule,
