@@ -20,6 +20,7 @@ import { ElementAtComponent } from './operator/element-at/element-at.component';
 import { SingleComponent } from './operator/single/single.component';
 import { AjaxComponent } from './operator/ajax/ajax.component';
 import { HigherOrderOperatorComponent } from './operator/higher-order-operator/higher-order-operator.component';
+import { ConcatMapComponent } from './operator/concat-map/concat-map.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { HigherOrderOperatorComponent } from './operator/higher-order-operator/h
     ElementAtComponent,
     SingleComponent,
     AjaxComponent,
-    HigherOrderOperatorComponent
+    HigherOrderOperatorComponent,
+    ConcatMapComponent
   ],
   imports: [
     BrowserModule,
