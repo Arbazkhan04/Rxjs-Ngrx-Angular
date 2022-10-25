@@ -21,6 +21,8 @@ import { SingleComponent } from './operator/single/single.component';
 import { AjaxComponent } from './operator/ajax/ajax.component';
 import { HigherOrderOperatorComponent } from './operator/higher-order-operator/higher-order-operator.component';
 import { ConcatMapComponent } from './operator/concat-map/concat-map.component';
+import { ExcaustMapComponent } from './operator/excaust-map/excaust-map.component';
+import { SwitchMapComponent } from './operator/switch-map/switch-map.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { ConcatMapComponent } from './operator/concat-map/concat-map.component';
     SingleComponent,
     AjaxComponent,
     HigherOrderOperatorComponent,
-    ConcatMapComponent
+    ConcatMapComponent,
+    ExcaustMapComponent,
+    SwitchMapComponent
   ],
   imports: [
     BrowserModule,
