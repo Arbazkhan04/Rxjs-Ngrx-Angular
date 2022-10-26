@@ -23,6 +23,7 @@ import { HigherOrderOperatorComponent } from './operator/higher-order-operator/h
 import { ConcatMapComponent } from './operator/concat-map/concat-map.component';
 import { ExcaustMapComponent } from './operator/excaust-map/excaust-map.component';
 import { SwitchMapComponent } from './operator/switch-map/switch-map.component';
+import { SubjectComponent } from './subject/subject.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { SwitchMapComponent } from './operator/switch-map/switch-map.component';
     HigherOrderOperatorComponent,
     ConcatMapComponent,
     ExcaustMapComponent,
-    SwitchMapComponent
+    SwitchMapComponent,
+    SubjectComponent
   ],
   imports: [
     BrowserModule,
