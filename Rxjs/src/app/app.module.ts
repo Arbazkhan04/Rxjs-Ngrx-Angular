@@ -24,6 +24,7 @@ import { ConcatMapComponent } from './operator/concat-map/concat-map.component';
 import { ExcaustMapComponent } from './operator/excaust-map/excaust-map.component';
 import { SwitchMapComponent } from './operator/switch-map/switch-map.component';
 import { SubjectComponent } from './subject/subject.component';
+import { HotColdComponent } from './subject/hot-cold/hot-cold.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { SubjectComponent } from './subject/subject.component';
     ConcatMapComponent,
     ExcaustMapComponent,
     SwitchMapComponent,
-    SubjectComponent
+    SubjectComponent,
+    HotColdComponent
   ],
   imports: [
     BrowserModule,
